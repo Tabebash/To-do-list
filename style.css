@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('./to-do\ list\ bg.jpg') no-repeat center center / cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box {
+    background-color: #fff;
+    padding: 1rem;
+    width: 60%;
+    height: 80px;
+    border-radius: 25px;
+    box-shadow: 0 0 5px;
+    position: relative;
+}
+
+.input {
+    width: 81%;
+    height: 100%;
+    border-radius: inherit;
+    border-style: solid;
+    padding: 0.875rem;
+    font-size: 1.2rem;
+    outline-color: black;
+    color: hsla(0, 0%, 0%, 0.651);
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.292) inset, 0 0 8px rgba(19, 169, 21, 0.233) inset;
+}
+
+.input-box button {
+    border-radius: inherit;
+    background-color: transparent;
+    border-style: solid;
+    width:15%;
+    height: 100%;
+  
+    border-color: green;
+    color: green;
+    margin: 0 auto;
+    position: relative;
+    right: -12px;
+} 
+
+.inputBtn i {
+    font-size: 1.2rem;
+}
+
+.input-box button:hover {
+    background-color: green;
+    color: #fff;
+}
+
+/* LIST STYLES */
+
+ul {
+
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    width: 60%;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    gap: 10px;
+}
+
+li:last-of-type {
+    margin-bottom: 0;
+}
+
+.list-text {
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsla(0, 0%, 0%, 0.651);
+    word-wrap:  break-word;
+}
+
+.done {
+    text-decoration:line-through;
+}
+
+.list-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.list-buttons button {
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: 1px solid;
+    height: 40px;
+    width: 50px;
+}
+
+/* buttons effects */
+
+button.check {
+    border-color: orange;
+}
+button.delete {
+    border-color: red;
+}
+button.check:hover {
+   background-color: orange;
+}
+button.delete:hover {
+   background-color: red;
+}
+
+button.check i {
+    color: orange;
+}
+button.check:hover i {
+    color: #fff;
+}
+button.delete i  {
+    color: red;
+}
+button.delete:hover i {
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
